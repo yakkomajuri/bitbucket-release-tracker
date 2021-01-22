@@ -1,0 +1,68 @@
+{
+    "name": "bitbucket-release-tracker",
+    "url": "https://github.com/PostHog/bitbucket-release-tracker",
+    "description": "Track Bitbucket releases in PostHog.",
+    "main": "index.js",
+    "config": [
+        {
+            "markdown": "Specify your Bitbucket configuration here."
+        },
+        {
+            "key": "posthogHost",
+            "hint": "Optional - defaults to https://app.posthog.com",
+            "name": "URL of your PostHog instance",
+            "type": "string",
+            "default": "https://app.posthog.com",
+            "required": false
+        },
+        {
+            "key": "posthogApiKey",
+            "hint": "Your Personal API Key is not the same as the Project API key",
+            "name": "PostHog API Key",
+            "type": "string",
+            "default": "",
+            "required": true
+        },
+        {
+            "key": "bitbucketHost",
+            "hint": "Optional - defaults to https://bitbucket.org",
+            "name": "URL of your BitBucket instance - not needed for Bitbucket Cloud",
+            "type": "string",
+            "order": 3,
+            "default": "https://bitbucket.org/",
+            "required": false
+        },
+        {
+            "key": "bitbucketWorkspace",
+            "hint": "This is often your username",
+            "name": "Bitbucket workspace where your repo is hosted",
+            "type": "string",
+            "default": "",
+            "required": true
+        },
+        {
+            "key": "repoName",
+            "hint": "",
+            "name": "Name of your repository",
+            "type": "string",
+            "default": "",
+            "required": true
+        },
+        {
+            "key": "bitbucketUsername",
+            "hint": "Required for private repos only",
+            "name": "Bitbucket username",
+            "type": "string",
+            "default": "",
+            "required": false
+        },
+        {
+            "key": "bitbucketToken",
+            "hint": "Required for private repos only",
+            "name": "Bitbucket Personal Token",
+            "type": "string",
+            "default": "",
+            "required": false
+        }
+    ]
+}
