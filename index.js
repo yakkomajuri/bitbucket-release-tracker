@@ -80,7 +80,7 @@ async function runEveryMinute({ config, global, cache }) {
     const newTags = bitbucketTagsJson.values
         .map((tag) => ({
             name: tag.name,
-            date: tag.date
+            date: tag.target.date
         }))
         .filter((tag) => !annotations.has(tag.name))
 
