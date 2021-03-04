@@ -21,7 +21,8 @@
             "name": "PostHog API Key",
             "type": "string",
             "default": "",
-            "required": true
+            "required": true,
+            "secret": true
         },
         {
             "key": "bitbucketHost",
@@ -62,7 +63,8 @@
             "name": "Bitbucket Personal Token",
             "type": "string",
             "default": "",
-            "required": false
+            "required": false,
+            "secret": true
         }
     ]
 }
