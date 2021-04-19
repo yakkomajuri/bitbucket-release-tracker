@@ -14,4 +14,3 @@ Works on both Bitbucket Cloud and Bitbucket Server.
 
 
 
-test
